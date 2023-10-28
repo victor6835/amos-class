@@ -1,0 +1,27 @@
+vscode環境建置
+
+*開新檔案快捷鍵ctrl+N>ctrl+K>M
+
+*設定:
+Emmet: Trigger Expansion On Tab > 啟用
+Word Wrap: On
+
+*鍵盤快捷鍵:
+Zoom: 讓編輯介面縮放和視窗介面縮放區別
+{Editor In}:(ctrl+=)
+{Editor Out}:(ctrl+-)
+{View In}:(ctrl+數字鍵+)
+{View Out}:(ctrl+數字鍵-)
+
+
+Auto Rename Tag
+Chinese Lorem
+CSS Variable Autocomplete
+Fake Image Snippet Collection
+Live Server
+Material Icon Theme
+Path Intellisense
+
+
+
+    
