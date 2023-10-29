@@ -11,14 +11,33 @@
             屬性:值；
             屬性:值；
         }
+        #victor{
+            color: blueviolet;
+        }
+        h1{
+            color: aqua;
+        }
+        p{
+            color: brown;
+        }
+        .info{
+            background-color: aliceblue;
+        }
+/* 後寫蓋掉前面的，並不是因為寫在html有優先權 */
+/* important>inline style>id>class>tag */
+/* important並無後寫蓋掉前寫的規則，當屬性相同時往上曾比較 */
     </style>
 </head>
 <body>
     <h1>title</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum maiores, dolor commodi fugiat totam veritatis sit culpa suscipit nobis neque ipsam, repudiandae quis animi aspernatur doloribus harum nisi, recusandae voluptatem?</p>
-    <p>Laudantium molestias id rerum porro sunt at minima, cumque eum recusandae reprehenderit illo dolorum qui saepe, ut suscipit incidunt repudiandae doloremque dolorem repellat deleniti molestiae itaque dolores? Maiores, necessitatibus quod?</p>
-    <p>Veniam suscipit saepe nisi soluta excepturi vel iste necessitatibus autem nesciunt, distinctio praesentium, adipisci fugit a, odio quisquam placeat ab facilis. Veritatis aut reiciendis quas accusantium? Fugit doloribus molestias laborum.</p>
+    <p class="info header" id="victor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum maiores, dolor commodi fugiat totam veritatis sit culpa suscipit nobis neque ipsam, repudiandae quis animi aspernatur doloribus harum nisi, recusandae voluptatem?</p>
+
+    <div class="box OO"><p>Laudantium molestias id rerum porro sunt at minima,<span> cumque eum recusandae</span> reprehenderit illo dolorum qui saepe, ut suscipit incidunt repudiandae doloremque dolorem repellat deleniti molestiae itaque dolores? Maiores, necessitatibus quod?</p></div>
+
+    <p class="box XX">Veniam suscipit saepe nisi soluta excepturi vel iste <span>necessitatibus autem nesciunt, distinctio praesentium, adipisci fugit a, odio qui</span>squam placeat ab facilis. Veritatis aut reiciendis quas accusantium? Fugit doloribus molestias laborum.</p>
+
     <p>Labore minima voluptatibus, explicabo obcaecati ducimus alias cum. Libero minus ducimus laboriosam, nihil quis mollitia repellendus cupiditate, ipsa minima soluta obcaecati exercitationem quam aliquid consequatur illo, tempora saepe dolorem? Eius.</p>
     <p>Dolor accusamus et explicabo ad eveniet delectus perferendis repellendus, at veritatis ut eum. Quae repellendus omnis at voluptatum cumque, enim minus cum earum necessitatibus ab debitis, fuga nulla eveniet adipisci.</p>
+    
 </body>
 </html>

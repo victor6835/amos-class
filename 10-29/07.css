@@ -4,3 +4,21 @@ h1{
 p{
     background-color: #eee;
 }
+.info{
+    background-color: #fff;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.box span{
+    color: red;
+}
+.box{
+    color: rgb(0, 128, 2);
+}
+p:first-child{
+    color: black;
+}
+div .box{
+    color: beige;
+}
