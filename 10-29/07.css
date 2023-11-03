@@ -16,9 +16,15 @@ p{
 .box{
     color: rgb(0, 128, 2);
 }
-p:first-child{
-    color: black;
+/* p:first-child{
+    color: black; */
 }
 div .box{
     color: beige;
+}
+div:not(.box){
+    color: #fa0;
+}
+.fox{
+    color: #fae;
 }
