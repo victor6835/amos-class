@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW" /*dir="rtl"*/>
+<!-- dir="rtl" 為所有元件預設靠右對齊-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .wrap{
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+
+            display: flex;
+            /*flex方向設定*/
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            /* flex方向須根據網站語言修改 */
+            /* 換行可以確保box設定寬高不會跑掉 */
+
+            /* align-content: flex-start; */
+
+            /* align-content: 控制彈性列在父層空間中【交叉軸】的對其與分布 */
+            /* align-content: stretch：預設值，每行內容元素全部撐開至 flexbox 大小 */
+
+            /* align-items: flex-end; */
+
+            /* align-items:控制子物件在彈性列中【交叉軸】的對齊 */
+
+            justify-content:space-between;
+            /* 控制子物件在父層空間中【主軸】的對其與分布 */
+
+
+        }
+        .box{
+            background-color: #fa0;
+            font-size: 32px;
+            margin: 2px;
+            width: 120px;
+            height: 120px;
+        }
+        .box:first-child{
+            height: 200px;
+        }
+        .box:nth-child(5){
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <!-- <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+       <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div> -->
+    </div>
+</body>
+</html>
