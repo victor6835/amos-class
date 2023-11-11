@@ -10,6 +10,7 @@
             height: 600px;
             border: 2px solid red;
             display: flex;
+            /* align-content: center; */
             /* align-items: center; */
             flex-wrap: wrap;
             /* gap: 20px 10px; */
@@ -22,13 +23,13 @@
             font-size: 50px;
             margin: 2px;
             /* flex-shrink: 0; */
-            /* 子元素「壓縮」比例分配：數字，無單位，預設值為 1，不可為負值 */
+            /* 子元素「壓縮」比例分配：數字，無單位，預設值為 1，不可為負值如果設置為 0 則不會縮放。 */
             text-align: center;
             /* flex-basis: 50px; */
             /*主軸上元素大小*/
         }
         .item:nth-child(2){
-            /* flex-grow: 1; */
+            flex-grow: 1;
             /* 子元素「伸展」比例分配：數字，無單位，預設值為 0，不可為負值 */
         }
         .item:nth-child(3){
