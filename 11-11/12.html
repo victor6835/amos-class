@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 60px;
+            position: relative;
+            border-radius: 20%;
+            background-color: #fa0;
+            /* 圖若為長形不適合用%數，50*20% !=60*20% */
+
+            /* box-shadow: X Y 模糊 擴張 色彩 內部; */
+            box-shadow: 0px 0px 10px -20px red;
+            transition: 1s;
+            top: 0;
+        }
+        .box:hover{
+            box-shadow: 0px 0px 40px 80px red;
+            top: -20px;
+
+        }
+        .button{
+            width: 150px;
+            height: 50px;
+            font-size: 50px;
+            background-color: rgb(0, 174, 255);
+            border-radius: 75px;
+            text-align: center;
+            margin: auto;
+            padding: 20px;
+            color: #fff;
+            position: relative;
+            top: 0;
+
+            box-shadow: 0px 1px 0px #666;
+            box-shadow: 0px 2px 0px #777;
+            box-shadow: 0px 3px 0px #888;
+            box-shadow: 0px 4px 0px #999;
+            box-shadow: 0px 5px 0px #aaa;
+            box-shadow: 0px 5px 0px #bbb;
+
+            transition: 1s;
+
+
+        }
+
+        .button:hover{
+            top: 5px;
+            box-shadow: 0px 1px 0px #666;
+            box-shadow: 0px 1px 0px #777;
+            box-shadow: 0px 2px 0px #888;
+            box-shadow: 0px 2px 0px #999;
+            box-shadow: 0px 3px 0px #aaa;
+            box-shadow: 0px 3px 0px #bbb;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="button">button</div>
+</body>
+</html>

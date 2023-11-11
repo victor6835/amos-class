@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 280px;
+            border: 1px solid black;
+            padding: 16px;
+            margin: 10px;
+            position: relative;
+        }
+
+        .card .label {
+            background-color: #fa0;
+            padding: 6px 10px;
+            position: absolute;
+            top: 30px;
+            left: 0;
+        }
+
+        .card .label::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 20px;
+            border-left: 16px solid transparent;
+            border-top: 16px solid red;
+            left: 0;
+            top: 100%;
+        }
+
+        .pic img {
+            width: 100%;
+        }
+
+        .t03 {
+            width: 0;
+            height: 0;
+            border-top: 25px solid;
+            border-right: 25px solid;
+            border-bottom: 25px solid;
+            border-left: 25px solid;
+            border-color: #0099e5 #ff4c4c #34bf49 #fbb034;
+        }
+        .budget{
+            width: 0;
+            border-right: 16px solid;
+            border-bottom: 16px solid;
+            border-left: 16px solid;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="label">
+            店到店
+        </div>
+        <div class="pic">
+            <img src="https://picsum.photos/300/200/?random=10">
+        </div>
+        <div class="text">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi exercitationem officia hic nemo
+                minima odio! Exercitationem similique aperiam, laudantium architecto numquam, dolorem sunt beatae cumque
+                quam fugit quod corporis!</p>
+        </div>
+        <div class="budget"></div>
+    </div>
+    <div class="t03">
+
+    </div>
+</body>
+
+</html>

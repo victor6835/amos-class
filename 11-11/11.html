@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽元素</title>
+    <style>
+        p{
+            background-color: #eee;
+        }
+        p::before{
+            content: '123';
+            color: red;
+        }
+        p::after{
+            content: '456';
+            color: red;
+        }
+        /* 偽元素預設為inline */
+        .t03 {
+            width: 0;
+            height: 0;
+            /* border-top: 25px solid; */
+            border-right: 25px solid;
+            border-bottom: 25px solid;
+            border-left: 25px solid;
+            border-color: #0099e5 #ff4c4c #34bf4900 #fbb034;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium non itaque dolorem numquam laboriosam hic dolor blanditiis illum a magnam.</p>
+
+    <div class="t03">
+
+    </div>
+</body>
+</html>
