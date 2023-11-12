@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 參考網站:https://www.casper.tw/css/2017/03/22/css-grid-layout/ -->
+    <style>
+        
+        .grid{
+            border: 2px solid red;
+            /* width: 400px; */
+            /* height: 400px; */
+            display: grid;
+            grid-template-columns: 100px 100px 200px;
+            /* grid-template-columns: repeat(3, 1fr); 3格裡面各1分 */
+            /* grid-template-rows: 200px, repeat(3,1fr); */
+
+            /*控制格子的對齊與分布*/
+            justify-content: space-between;
+            align-content: space-around;
+
+
+            /* 控制子物件 */
+            justify-items: end;
+            /* align-items: center; */
+
+
+        }
+        .item{
+            width: 50px;
+            height: 50px;
+            font-size: 32px;
+            background-color: #fa0;
+        }
+        .item:nth-child(2){
+            background-color: red;
+            /* order: -1; */
+            justify-self: start;
+            align-self: start;
+        }
+        .item:nth-child(5){
+            background-color: blue;
+            grid-column: 3/4;
+            /* grid-column: 1/span 5;
+            grid-row: 3/span 2; */
+        }
+        .item:nth-child(1){
+            grid-row: 2/4;
+            grid-column: 2/4;
+
+            grid-area: 2/2/4/4;
+        }
+        .grid2{
+            border: 1px solid red;
+            display: grid;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            font-size: 32px;
+            background-color: #fa0;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="grid">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+        </div>
+        <div class="grid2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+
+</body>
+
+</html>

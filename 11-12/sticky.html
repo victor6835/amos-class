@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky</title>
+    <link rel="stylesheet" href="/reset.css">
+    <style>
+        .header{
+            font-size: 100px;
+            background-color: #ccc;
+            height: 200px;
+        }
+        .main{
+            width: 900px;
+            margin: auto;
+            display: flex;
+            height: 600px;
+        }
+        .footer{
+            font-size: 100px;
+            background-color: #ccc;
+            height: 1200px;
+        }
+
+        .left{
+            width: 600px;
+            background-color: #fa0;
+        }
+        .right{
+            width: 280px;
+            margin-left: 20px;
+            background-color: #faf;
+        }
+        .pink{
+            display: flex;
+            flex-direction: column;
+        }
+        .sticky{
+            position: sticky;
+        }
+
+    </style>
+    <!-- 父層中黏貼位置 -->
+</head>
+<body>
+    <div class="header">header</div>
+    <div class="main">
+        <div class="left">
+            <a href="#">123123</a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi possimus facere voluptatem praesentium incidunt, dicta quidem. Culpa, ad. Ex veniam dicta fugiat, dolores laudantium laborum? Ullam similique iste nobis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi possimus facere voluptatem praesentium incidunt, dicta quidem. Culpa, ad. Ex veniam dicta fugiat, dolores laudantium laborum? Ullam similique iste nobis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi possimus facere voluptatem praesentium incidunt, dicta quidem. Culpa, ad. Ex veniam dicta fugiat, dolores laudantium laborum? Ullam similique iste nobis.</p>
+            <ul>
+                <li>12</li>
+                <li>12</li>
+                <li>12</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi possimus facere voluptatem praesentium incidunt, dicta quidem. Culpa, ad. Ex veniam dicta fugiat, dolores laudantium laborum? Ullam similique iste nobis.</p>
+        </div>
+        <div class="right">
+            <div class="pink">
+                <div class="sticky"></div>
+                <div class="blue"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

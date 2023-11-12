@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wraper{
+            width: 500px;
+            height: 500px;
+            border: 2px solid #f00;
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'main main footer'
+            'main main footer' ;
+            /* 透過 area 定義區塊在 template 上的位置，概念就是在畫面上登記屬於該元素的空間，此部分要內外元素一起看。 */
+        }
+        .box1{
+            grid-area: header;
+            background-color: #fa0;
+        }
+        .box2{
+            grid-area: main;
+            background-color: #faf;
+        }
+        .box3{
+            grid-area: footer;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
