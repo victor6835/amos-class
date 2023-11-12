@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical-align地雷</title>
+    <style>
+        .box{
+            width: 300px;
+            /* height: 100px; */
+            background-color: red;
+            margin: 100px;
+            overflow: hidden;
+        }
+        .box img{
+            vertical-align: top;
+            /* vertical-align: baseline; */
+            scale: 1;
+            transition: 1s;
+        }
+        .box:hover img{
+            scale: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://picsum.photos/300/200/?random=10">
+    </div>
+</body>
+</html>

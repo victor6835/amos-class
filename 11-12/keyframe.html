@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: #fa0;
+            margin: 10px;
+            font-size: 30px;
+        }
+        .box1{
+            position: relative;
+            /* animation: gogo 1s 0s  1 alternate; */
+            
+        }
+       
+        .box2{
+            position: relative;
+            animation: gogo 2s linear infinite alternate;
+        }
+        @keyframes gogo { 
+            0%{left: 0;
+            top: 0;rotate: 20deg;}
+            25%{left: 150px;
+            top: 0;}
+            50%{left: 150px;
+            top: 150px;}
+            75%{left: 0;
+            top: 150px;}
+            100%{left: 0;
+            top: 0;
+        rotate: -20deg;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">A</div>
+    <div class="box box2">B</div>
+</body>
+
+</html>
