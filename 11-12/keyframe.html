@@ -16,12 +16,13 @@
         .box1{
             position: relative;
             /* animation: gogo 1s 0s  1 alternate; */
-            
+            transform-origin: center 10px;
+            /* 可調整旋轉中心上移 */
         }
        
         .box2{
             position: relative;
-            animation: gogo 2s linear infinite alternate;
+            animation: gogo 2s linear 0 alternate;
         }
         @keyframes gogo { 
             0%{left: 0;
