@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media-3</title>
-   <!-- 網站教學 https://w3c.hexschool.com/blog/21985acb -->
+    <!-- 網站教學 https://w3c.hexschool.com/blog/21985acb -->
     <style>
         .wrap {
             flex-wrap: wrap;
@@ -13,7 +13,7 @@
 
         .col {
             --flex-column: 1;
-            width: calc(100% / var(--flex-column) -15px * 2);
+            width: calc((100% / var(--flex-column)) - 15px * 2);;
             background-color: red;
             height: 200px;
             margin: 15px;
@@ -29,30 +29,32 @@
             .col {
                 --flex-column: 3;
             }
+        }
 
-            @media screen and (min-width: 1024px) {
 
-                .col {
-                    --flex-column: 4;
-                }
 
+        @media screen and (min-width: 1024px) {
+
+            .col {
+                --flex-column: 4;
             }
 
-            @media screen and (min-width: 1200px) {
+        }
 
-                .col {
-                    --flex-column: 5;
-                }
+        @media screen and (min-width: 1200px) {
 
+            .col {
+                --flex-column: 5;
             }
 
-            @media screen and (min-width: 1400px) {
+        }
 
-                .col {
-                    --flex-column: 6;
-                }
+        @media screen and (min-width: 1400px) {
 
+            .col {
+                --flex-column: 6;
             }
+
         }
     </style>
 </head>
