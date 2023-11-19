@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自訂屬性、變數函式</title>
+    <style>
+        .wrap {
+            --size: 200px;
+        }
+
+        .box {
+            --size: 400px;
+            /*自訂數值*/
+            width: var(--size, 100px);
+            /*若前面找不到值，後者為預設值*/
+            height: var(--size, 100px);
+            background-color: #fa0;
+        }
+        .box2{
+            width: var(--size, 100px);/*若子層無宣告，則優先抓父層的值，若父層無值，再用預設值100px*/
+            height: var(--size, 100px);
+            background-color: #f0f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>

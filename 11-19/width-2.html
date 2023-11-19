@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .wrap {
+            /* max-width: 1200px; */
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid red;
+        }
+
+        .box {
+            /* width: 570px; */
+            height: 200px;
+            background-color: #fa0;
+
+            /* width: 570px; */
+            width: calc(100%/2 - 15px*2);
+            /*不用自己算!!*/
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
