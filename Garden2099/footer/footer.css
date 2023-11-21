@@ -1,0 +1,38 @@
+.main-footer{
+    height: 278px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.container{
+    width: 1556px;
+    height: 150px;
+    display: flex;
+    margin: auto auto;
+}
+
+.container .logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.container > .footer-item{
+    width: 0;
+    flex-grow: 1;
+}
+.footer-item{
+
+}
+.footer-item .cal1{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.footer-item nav a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-item p{}
+.copyright{
+    text-align: center;
+}
