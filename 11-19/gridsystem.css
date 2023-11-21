@@ -1,19 +1,19 @@
 .container{
+    --column-gap:10px;
     max-width: 1200px;
-    margin-left: -10px;
-    margin-right: -10px;
-    --column_gap:
+    margin: auto;
+    padding-left: var(--column-gap);
+    padding-right: var(--column-gap);
 }
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: calc((100% / var(--flex-column)) - 15px * 2);
+    margin-left: calc(var(--column-gap) * -1);
+    margin-right: calc(var(--column-gap) * -1);
 }
 [class*="col-"]{
     box-sizing: border-box; 
-    padding: 10px;
+    padding: 0 var(--column-gap);
 }
 /*使用選取器讓版面乾淨*/
 
@@ -73,7 +73,6 @@
 .col-xl-12{width: 100%;}
 }
 .card{
-    height: 100px;
+    height: 100%;
     background-color: #fa0;
-    margin-bottom: 20px;
 }
