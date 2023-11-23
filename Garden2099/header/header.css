@@ -1,6 +1,6 @@
 *{box-sizing: border-box;}
 .main-header{
-    width: 100%;
+    width: 1920px;
     height: 120px;
     background-color: black;
     display: flex;
@@ -12,6 +12,7 @@
     display: flex;
     margin: auto;
     font-size: 0px;
+    
     
 }
 .main-header .container .left{
