@@ -1,69 +1,150 @@
-*{box-sizing: border-box;}
-.main-header{
-    width: 1920px;
+* {
+    box-sizing: border-box;
+}
+
+.main-header {
+    width: 100%;
     height: 120px;
     background-color: black;
     display: flex;
 }
-.main-header .container{
+
+.main-header .container {
     width: 1556px;
     height: 72px;
     justify-content: center;
     display: flex;
     margin: auto;
     font-size: 0px;
-    
-    
+
+
 }
-.main-header .container .left{
+
+.main-header .container .left {
     width: 0;
     flex-grow: 1;
     margin-right: 80px;
 
 }
-.main-header .container .right{
+
+.main-header .container .right {
     width: 0;
     flex-grow: 1;
     margin-left: 80px;
 
 }
-.main-header .container a{
+
+.main-header .container a {
     width: 200px;
     height: 72px;
     line-height: 72px;
     text-align: center;
-    
+
     display: inline-block;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 24px;
     text-decoration: none;
     color: black;
 }
-.main-header .container .about{
+
+.main-header .container .about {
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
-    background-color: #fbc528;
+    background-color: #E5DF30;
 }
-.main-header .container .menu{
+
+.main-header .container .menu {
     -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
-    background-color: #fbc528;
+    background-color: #E5DF30;
 }
-.main-header .container .shop{
+
+.main-header .container .shop {
     -webkit-clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
     clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
-    background-color: #fbc528;
+    background-color: #E5DF30;
 }
-.main-header .container .order{
+
+.main-header .container .order {
     -webkit-clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
     clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
     background-color: #00e509;
 }
-.main-header .container .logo{
+
+.main-header .container .logo {
     width: 180px;
     height: 180px;
+    z-index: 5;
 }
-.main-header .container .logo img{
+
+.main-header .container .logo img {
     width: 100%;
     height: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 840px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner .slogon {
+    width: 480px;
+    position: absolute;
+    background-color: #191A24;
+    color: #fff;
+    right: 40px;
+    bottom: 20px;
+    font-size: 36px;
+    line-height: 140%;
+    padding: 10px;
+}
+.blockone{
+    width: 100%;
+    height: 940px;
+    background-color: #E5DF30;
+}
+.blockone .IST{
+    text-align: center;
+    padding: 120px 0px 40px 0px;
+}
+.blockone .IST h1{
+    font-size: 48px;
+    line-height: 140%;
+
+}
+.blockone .IST small{
+    font-size: 24px;
+    line-height: 140%;
+}
+.blockone .container{
+    width: 1640px;
+    margin: auto auto;
+    display: flex;
+    flex-flow: column;
+}
+.blockone .container .intro{
+    display: flex;
+}
+.blockone .container .intro .cards{
+    margin: 0 24px;
+    height: 535px;
+    background-color: black;
+
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.blockone .container .intro .cards p{
+    padding: 36px 16px 16px 16px;
+}
+.blockone .container .intro .cards img{
+    margin: 16px 16px 0px 16px;
 }
