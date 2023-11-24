@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>等比例縮放</title>
+    <style>
+        .mv{
+            /* width: 560px; */
+            border: 2px solid red;
+        }
+        .box{
+            width: 100%;
+            height: 0;            
+            padding-bottom: 56.25%;/*315/560*100%*/
+            background-color: #fa0;
+            position: relative;
+        }
+        /*也可寫在.mv:after*/
+        /* .mv:after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        } */
+        .box iframe{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="mv">
+        <div class="box">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_qmdKguG5IY?si=qsqbUoSf8tUX0Bv2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
