@@ -19,12 +19,12 @@
     margin: auto;
 }
 
-.container .logo img{
+.main-footer .container .logo img{
     width: 150px;
     height: 150px;
 }
 
-.container > .footer-item{
+.main-footer .container > .footer-item{
     width: 0;
     flex-grow: 1;
 }
