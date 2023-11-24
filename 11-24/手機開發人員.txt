@@ -1,0 +1,3 @@
+Android開發人員=>USB偵錯=>手機接筆電
+chrome://inspect/#devices
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多重選單</title>
+    <style>
+        .main-nav{
+            width: 80%;
+            background-color: #fa0;
+            position: relative;
+        }
+        .main-nav ul{
+            margin: 0; 
+            padding: 0;
+            list-style: none;
+        }
+        .sub-menu{
+            display: none;
+            width: 100%;
+            background-color: #f80;
+            box-shadow: 0px 8px 8px #0003 inset;
+            box-shadow: 0px 8px 8px #0003 inset;
+            height: 0;
+            transition: max-high 1s;
+        }
+        .sub-menu li{
+            padding-left: 1em;
+        }
+        #sub-switch-2{
+            display: none;
+        }
+        #sub-switch-2:checked{
+            display: none;
+        }
+        .main-nav input[type="checkbox"]:checked~.sub-menu{
+            /* display: block;block無法加動畫 */
+            max-height: 100vh;
+            width: 100vh;
+            
+        }
+        .main-nav ul.main-menu li{
+            border-bottom: 1px solid #fff;
+            display: flex;
+            align-items: center;
+
+        }
+        .main-nav ul.main-menu li a{
+            display: block;
+            padding: 8px 10px;
+            text-decoration: none;
+            color: #fff;
+            box-sizing: border-box;
+            width: calc(100%-30px);
+        }
+        .main-nav .icon{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <ul class="main-menu">
+
+            <li><a href="#">link</a></li>
+                <input type="checkbox" id="sub-switch-2">
+                <label for="sub-switch-2" class="icon">></label>
+
+            <ul class="sub-menu">
+                <li><a href="#">sub link</a></li>
+                <li><a href="#">sub link</a></li>
+                <li><a href="#">sub link</a></li>
+                <li><a href="#">sub link</a></li>
+            </ul>
+
+            </li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            
+        </ul>
+    </nav>
+</body>
+
+</html>
