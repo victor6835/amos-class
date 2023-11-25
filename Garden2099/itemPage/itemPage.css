@@ -211,6 +211,68 @@
     right: 40px;
 }
 
+/* .main-item-------------------------------------- */
+
+.main-item{
+    width: 100%;
+    height: 2096px;
+    background: linear-gradient(180deg, rgba(229, 223, 48), rgba(74, 229, 48));
+}
+.main-item .container{
+    width: 1680px;
+    height: 100%;
+    margin: auto;
+    background-color: #000;
+    font-family:'Noto Sans TC', sans-serif;
+    color: #fff;
+}
+.main-item .container .item-info{
+    display: flex;
+    padding: 120px 140px;
+}
+.main-item .item-info .imgs{
+    width: 50%;
+}
+.main-item .item-info .imgs .bigpic{}
+.main-item .item-info .imgs .smallpic{
+    width: 100%;
+    /* padding: 40px 24px 0 0; */
+}
+.main-item .item-info .smallpic img{
+    padding: 24px 16px 0 0;
+}
+.main-item .info-price{
+    width: 50%;
+}
+.main-item .info-price h1{
+    font-size: 48px;
+}
+.main-item .info-price h2{
+    font-size: 36px;
+    padding: 32px 0;
+}
+.main-item .info-price p{
+    display: block;
+    padding: 32px 0;
+    font-size: 24px;
+    line-height: 140%;
+}
+.main-item .info-price .stars{
+
+}
+.main-item .info-price .stars span{}
+.main-item .item-intro{}
+.main-item .item-intro h2{}
+.main-item .item-intro p{}
+
+
+
+
+
+
+
+
+
 /* footer----------------------------------- */
 
 /* .main-footer{
