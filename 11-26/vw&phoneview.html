@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>等比例縮放文字vw、vh、vmin、vmax、vi、vb</title>
+    <!-- small-------------------
+    svw
+    svh
+    svmin
+    svmax
+    svi
+    svb
+    large-------------------
+    lvw
+    lvh
+    lvmin
+    lvmax
+    lvi
+    lvb
+    dynamic-------------------
+    dvw
+    dvh
+    dvmin
+    dvmax
+    dvi
+    dvb -->
+    https://pjchender.blogspot.com/2015/04/css-3vh-vw.html
+    <style>
+        h1 {
+            font-size: 64px;
+        }
+
+        @media (width < 1200px) {
+            h1 {
+                font-size: clamp(28px, 5.333333vw, 64px);
+            }
+        }
+         /*手機橫向*/
+        @media (orientation: landscape) {
+            h1 {
+                color: blue;
+            }
+        }
+
+         /*手機直向*/
+        @media (orientation: portrait) {
+            h1 {
+                color: aqua;
+            }
+        }
+
+       
+        /* dark-mode */
+        @media (prefers-color-scheme: dark) {
+            h1 {
+                background: #753;
+                color: #dcb;
+                outline: 5px dashed #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kv">
+        <h1>金魚都不能懂</h1>
+    </div>
+</body>
+
+</html>
