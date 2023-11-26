@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radius/object</title>
+    <style>
+        .card{
+            width: 300px;
+            padding: 10px;
+            border: 1px solid red;
+            border-radius: 20px;
+        }
+        .pic{
+            border-radius: 9px;/*同心圓概念*/
+            overflow: hidden;
+            background-color: #fa0;
+        }
+        .pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;/*圖片裁切後填滿*/
+            /* object-fit: contain; *//*圖片不裁切填滿*/
+            /* object-position: center top; *//*圖片裁切後決定裁切後保留的範圍*/
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="pic">
+            <img src="https://picsum.photos/300/200/?random=10">
+        </div>
+    </div>
+</body>
+</html>
