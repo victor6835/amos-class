@@ -96,107 +96,19 @@
     height: 100%;
 }
 
-/* main-cart------------------------------------------ */
 
-.main-cart {
-    width: 100%;
-    height: 1400px;
-    background: linear-gradient(180deg, rgba(229, 223, 48), rgba(74, 229, 48));
-}
 
-.main-cart .container {
-    position: relative;
-    width: 1680px;
-    height: 100%;
-    margin: auto;
-    background-color: #000;
-    font-family: 'Noto Sans TC', sans-serif;
-    color: #000;
-}
 
-.main-cart .cart-list {
-    width: 1366px;
-    margin: auto;
-    padding-top: 80px;
-    overflow: hidden;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-flow: column;
-    align-items: flex-end;
-}
 
-.main-cart .cart-list table {
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 24px;
-    width: 100%;
-    background-color: #FBC528;
-}
 
-.main-cart .cart-list th {
-    background-color: #191A24;
-    color: #ffffff;
-    width: 25vw;
-    height: 60px;
-    vertical-align: middle;
-}
 
-.main-cart .cart-list td {
-    height: 150px;
-    text-align: center;
-    vertical-align: middle;
-}
 
-.main-cart .cart-list tr {
-    /* border-bottom: 1px solid #dddddd; */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-}
 
-.main-cart .cart-list img {
-    padding: 0 8px;
-}
-
-.main-cart .pay-info{
-    color: #ffffff;
-    width: 402px;
-    margin-top: 40px;
-    margin-bottom: 80px;
-}
-.main-cart .pay-info table {
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 24px;
-    width: 400px;
-    background-color: #191A24;
-}
-
-.main-cart .pay-info th {
-    /* height: 24px; */
-    background-color: #FBC528;
-    color: #000;
-    vertical-align: middle;
-}
-.main-cart .pay-info td {
-    height: 60px;
-    text-align: center;
-    vertical-align: middle;
-}
-.main-cart .pay-info .total{
-    font-size: 32px;
-}
-.main-cart .sent button{
-    display: inline-block;
-    -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
-    clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
-    background-color: #00e509;
-    border: none;
-    padding: 16px 84px;
-
-    font-size: 24px;
-}
 
 
 /* footer----------------------------------- */
 
-.main-footer{
+/* .main-footer{
     width: 100%;
     height: 278px;
     background-color: #191A24;
@@ -265,4 +177,4 @@
     width: 100%;
     text-align: center;
     margin-top: 84px;
-}
+} */
