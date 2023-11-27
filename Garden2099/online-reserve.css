@@ -96,13 +96,11 @@
     height: 100%;
 }
 
-
-
-/* .main-order-confirmed(名字同main-cart檔案---------------- */
+/* main-cart------------------------------------------ */
 
 .main-cart {
     width: 100%;
-    height: 100%;
+    height: 1400px;
     background: linear-gradient(180deg, rgba(229, 223, 48), rgba(74, 229, 48));
 }
 
@@ -114,25 +112,6 @@
     background-color: #000;
     font-family: 'Noto Sans TC', sans-serif;
     color: #000;
-}
-
-/* ordernumber--------------------------- */
-
-.main-cart .ordernumber{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding-top: 120px;
-
-    font-size: 48px;
-}
-.main-cart .ordernumber h2{
-    display: block;
-    padding: 40px 0;
-    color: #ffffff;
-}
-.main-cart .ordernumber .order-detail{
-    font-size: 36px;
 }
 
 .main-cart .cart-list {
@@ -207,12 +186,13 @@
     display: inline-block;
     -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
-    background-color: #FBC528;
+    background-color: #00e509;
     border: none;
     padding: 16px 84px;
 
     font-size: 24px;
 }
+
 
 /* footer----------------------------------- */
 
